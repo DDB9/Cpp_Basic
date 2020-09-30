@@ -9,5 +9,4 @@ public:
 	std::string huiswerk;
 	std::string getHuiswerk();
 	void setHuiswerk(std::string amnt);
-
 };

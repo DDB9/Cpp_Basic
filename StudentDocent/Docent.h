@@ -9,5 +9,4 @@ public:
 	long double salaris;
 	long double getSalaris();
 	void setSalaris(long double amnt);
-
 };

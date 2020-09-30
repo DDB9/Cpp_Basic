@@ -12,7 +12,7 @@ int main()
     std::cout << "Student " << student.getName() << " is " << student.getAge() << " jaar oud." << std::endl;
     std::cout << "Docent " << docent.getName() << " is " << docent.getAge() << " jaar oud." << std::endl;
 
-    student.setHuiswerk("Moker veel");
+    student.setHuiswerk("moker veel");
     docent.setSalaris(4129.45);
 
     std::cout << student.getName() << " heeft " << student.getHuiswerk() << " huiswerk..." << std::endl;
