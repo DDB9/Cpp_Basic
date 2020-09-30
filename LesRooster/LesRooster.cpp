@@ -4,7 +4,6 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
 }
 
 /// <summary>
@@ -12,7 +11,7 @@ int main()
 /// </summary>
 /// <param name="studentNum">Number of the student whos Student object to return.</param>
 /// <returns>Returns a Student object.</returns>
-Student Student::GetStudent(int studentNum)
+Student Student::getStudent(int studentNum)
 {
     // Check the register of students and compare the student numbers to the parameter.
 }
@@ -21,7 +20,7 @@ Student Student::GetStudent(int studentNum)
 /// Adds a student object to the registry of already existing students.
 /// </summary>
 /// <param name="student">Student to add.</param>
-void Student::AddStudent(Student student)
+void Student::addStudent(Student student)
 {
 }
 
@@ -29,7 +28,7 @@ void Student::AddStudent(Student student)
 /// Add a subject to the registery of already existing subjects.
 /// </summary>
 /// <param name="subj">Subject to add.</param>
-void Subject::AddSubject(Subject subj)
+void Subject::addSubject(Subject subj)
 {
 }
 
@@ -39,7 +38,7 @@ void Subject::AddSubject(Subject subj)
 /// <param name="subj">Subject to schedule time for.</param>
 /// <param name="time">A dictionairy containing the Day as the key, and the time as another dictinairy as the value, 
 /// which contains the starting time as the key, and the end time as the value.</param>
-void Subject::AddSubjectHours(Subject subj, std::map<std::string, std::map<std::string, std::string>> time)
+void Subject::addSubjectHours(Subject subj, std::map<std::string, std::map<std::string, std::string>> time)
 {
 }
 
@@ -48,7 +47,7 @@ void Subject::AddSubjectHours(Subject subj, std::map<std::string, std::map<std::
 /// </summary>
 /// <param name="subjName">Name of the subject to return.</param>
 /// <returns>Returns a subject object.</returns>
-Subject Subject::GetSubject(std::string subjName)
+Subject Subject::getSubject(std::string subjName)
 {
     return Subject();
 }
@@ -58,7 +57,7 @@ Subject Subject::GetSubject(std::string subjName)
 /// </summary>
 /// <param name="student">Student to assign a specific subject to.</param>
 /// <param name="subj">Subject to assign a student to.</param>
-void Subject::AddSubjectToStudent(Student student, Subject subj)
+void Subject::addSubjectToStudent(Student student, Subject subj)
 {
 }
 
@@ -67,7 +66,7 @@ void Subject::AddSubjectToStudent(Student student, Subject subj)
 /// </summary>
 /// <param name="student">Student to remove.</param>
 /// <param name="subj">Subject to remove the student from.</param>
-void Subject::RemoveStudentFromSubject(Student student, Subject subj)
+void Subject::removeStudentFromSubject(Student student, Subject subj)
 {
 }
 
@@ -76,7 +75,7 @@ void Subject::RemoveStudentFromSubject(Student student, Subject subj)
 /// </summary>
 /// <param name="teacher">Teacher to add to a subject.</param>
 /// <param name="subj">Subject to add a teacher to.</param>
-void Teacher::AssignTeacherToSubject(Teacher teacher, Subject subj)
+void Teacher::assignTeacherToSubject(Teacher teacher, Subject subj)
 {
 }
 
@@ -85,6 +84,6 @@ void Teacher::AssignTeacherToSubject(Teacher teacher, Subject subj)
 /// </summary>
 /// <param name="teacher">teacher to remove from a subject.</param>
 /// <param name="subj">Subject to remove a teacher from.</param>
-void Teacher::RemoveTeacherFromSubject(Teacher teacher, Subject subj)
+void Teacher::removeTeacherFromSubject(Teacher teacher, Subject subj)
 {
 }

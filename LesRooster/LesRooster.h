@@ -10,8 +10,8 @@ public:
 	const int studentNum;
 	int studentYear;
 
-	void AddStudent(Student student);
-	Student GetStudent(int studentNum);
+	void addStudent(Student student);
+	Student getStudent(int studentNum);
 
 private:
 	std::string studentHomeAdress;
@@ -26,8 +26,8 @@ public:
 	const int teacherNum;
 	std::vector<std::string> teacherSubjects;
 	
-	void AssignTeacherToSubject(Teacher teacher, Subject subj);
-	void RemoveTeacherFromSubject(Teacher teacher, Subject subj);
+	void assignTeacherToSubject(Teacher teacher, Subject subj);
+	void removeTeacherFromSubject(Teacher teacher, Subject subj);
 
 private:
 	std::string teacherHomeAdress;
@@ -41,12 +41,12 @@ public:
 	std::string subjectName;
 	std::vector<std::map<std::string, std::map<std::string, std::string>>> subjectHours; // oh god what have I created.
 
-	void AddSubject(Subject subj);
-	void AddSubjectHours(Subject subj, std::map<std::string, std::map<std::string, std::string>> time);
-	Subject GetSubject(std::string subjName);
+	void addSubject(Subject subj);
+	void addSubjectHours(Subject subj, std::map<std::string, std::map<std::string, std::string>> time);
+	Subject getSubject(std::string subjName);
 
-	void AddSubjectToStudent(Student student, Subject subj);
-	void RemoveStudentFromSubject(Student student, Subject subj);
+	void addSubjectToStudent(Student student, Subject subj);
+	void removeStudentFromSubject(Student student, Subject subj);
 
 private:
 	int subjectID;
