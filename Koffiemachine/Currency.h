@@ -5,6 +5,4 @@ class Currency
 {
 	public:
 		Currency();
-
-		virtual void betaal();
 };

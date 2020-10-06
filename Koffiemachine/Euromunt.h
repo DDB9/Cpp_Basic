@@ -7,6 +7,4 @@ class Euromunt : public Currency
 		Euromunt(std::string name, float value);
 		std::string name;
 		float value;
-
-		void betaal() override;
 };

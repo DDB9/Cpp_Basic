@@ -4,10 +4,8 @@
 
 class VijftigCent : public Currency
 {
-	public:
-		VijftigCent(std::string name, float value);
-		std::string name;
-		float value;
-
-		void betaal() override;
+public:
+	VijftigCent(std::string name, float value);
+	std::string name;
+	float value;
 };
